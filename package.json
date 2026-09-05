@@ -1,0 +1,19 @@
+{
+  "name": "jansetu-jharkhand",
+  "version": "1.0.0",
+  "description": "JANSETU (जनसेतु) - Jharkhand Societal Innovation Platform (SIH 2026)",
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix client && npm --prefix client run build",
+    "start": "node server/index.js",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "install-all": "npm install --prefix server && npm install --prefix client",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "keywords": ["sih2026", "jharkhand", "jansetu", "nep2020", "civic-tech"],
+  "author": "BCA Innovation Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
